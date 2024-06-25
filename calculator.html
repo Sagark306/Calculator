@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+     <script src="calculator.js" defer> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   
+    <div class="span"><i class="fa-solid fa-bars"></i><span>Standard Calculator</span> <i class="fa-solid fa-clock-rotate-left"></i></div>
+    <div align="center" class="header">
+
+        <input type="text" name="cal" id="cal" size="15" placeholder="0">
+        
+        <table width="100%" cellspacing="0">
+           
+            <tr class="tr">
+                <th>MC</th>
+                <th>MR</th>
+                <th>M+</th>
+                <th>M-</th>
+                <th>MS</th>
+                <th>M&#94</th>
+            </tr>
+             </table>
+             <table width="320px" cellspacing="3">
+            <tr >
+                <td><button class="gray" name="rem" onclick="arithmetic(this)">%</button></td>
+                <td><button class="gray">CE</button></td>
+                
+                <td><button class="gray"  name="C" onclick="add(this)">C</button></td>
+                <td><button class="gray" name="wrong" onclick="delet(this)"><i class="fa-solid fa-circle-xmark"></i></button></i></td>
+               
+            </tr>
+            <tr > 
+                <td><button class="gray" name="haff" onclick="delet(this)">1/x</button></td>
+                <td><button class="gray" name="sqr" onclick="delet(this)">x<sup>2</sup></button></button></td>
+                
+                <td><button class="gray"><sup>2</sup>&radic;x</button></i></td>
+               <td><button class="gray" name="div" onclick="arithmetic(this)">&div;</button ></td>
+            </tr>
+             <tr>
+                <td><button name="7" onclick="arithmetic(this)">7</button></td>
+                <td><button name="8" onclick="arithmetic(this)">8</button></td>
+                <td ><button name="9" onclick="arithmetic(this)">9</button></td>
+                <td ><button class="gray" name="X" onclick="arithmetic(this)">X</button ></i></td>
+               
+            </tr>
+            
+            <tr>
+                <td><button name="4" onclick="arithmetic(this)">4</button></td>
+                <td><button name="5" onclick="arithmetic(this)">5</button></td>
+                <td><button name="6" onclick="arithmetic(this)">6</button></td>
+                <td ><button class="gray" name="-" onclick="arithmetic(this)">-</button></i></td>
+               
+            </tr>
+            <tr>
+                <td><button name="1" onclick="arithmetic(this)">1</button></td>
+                <td><button name="2" onclick="arithmetic(this)">2</button></td>
+                <td><button name="3" onclick="arithmetic(this)">3</button></td>
+                <td ><button class="gray" name="+" onclick="arithmetic(this)">+</button></i></td>
+               
+            </tr>
+            <tr>
+                <td><button name="oposite">+/-</button></td>
+                <td><button name="0" onclick="arithmetic(this)">0</button></td>
+                <td><button name="." onclick="arithmetic(this)">.</button></td>
+                <td><button class="eq" name="=" onclick="add(this)">=</button></i></td>
+               
+            </tr>
+        </table>
+    </div>
+   
+    </body>
+</html>

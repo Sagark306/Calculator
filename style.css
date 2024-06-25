@@ -1,0 +1,59 @@
+
+input{
+            padding: 31px;
+            border: none;
+            text-align: right;
+            font-size: 34px;
+            color: white;
+            background-color: black;
+            outline: none;
+        }
+       input::placeholder{
+        color: white;
+       }
+      .span{
+        margin: 30px auto;
+        background-color: rgb(26, 29, 29);
+        font-size: 25px;
+        color: white;
+        
+        display: flex;
+        justify-content:  space-between;
+        color: white;
+      }
+        button{
+            height: 71px;
+            width: 92px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(69, 65, 65);
+           
+        }
+        
+        .eq{
+            background-color: rgb(38, 188, 208);
+            color: black;
+        }
+        div{
+            border: solid black 2px;
+            width: 389px;
+            background-color: black;
+            margin: -30px auto;
+        }
+        .tr{
+            color: white;
+        }
+        .gray{
+            background-color: rgb(48, 45, 45);
+        }
+
+        @media  screen and (max-width:430px) {
+            .header{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
